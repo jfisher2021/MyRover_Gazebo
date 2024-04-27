@@ -31,12 +31,14 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
+import launch_ros
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
     declared_arguments = []
+    use_sim_time = LaunchConfiguration("use_sim_time", default="true")
     # UR specific arguments
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -83,7 +85,6 @@ def generate_launch_description():
     # General arguments
     description_file = LaunchConfiguration("description_file")
     description_package = LaunchConfiguration("description_package")
-    tf_prefix = LaunchConfiguration("tf_prefix")
 
     robot_description_content = Command(
         [
@@ -91,17 +92,28 @@ def generate_launch_description():
             " ",
             PathJoinSubstitution([FindPackageShare(description_package), "urdf", description_file]),
             " ",
-            "safety_limits:=",
-            safety_limits,
-            " ",
-            "name:=",
-            "ur",
-            " ",
-            "tf_prefix:=",
-            tf_prefix,
+           
         ]
     )
-    
+
+    robot_description_param = launch_ros.descriptions.ParameterValue(robot_description_content, value_type=str)
+    robot_state_publisher_node = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        name='robot_state_publisher',
+        output='screen',
+        parameters=[{
+            'use_sim_time': use_sim_time,
+            'robot_description': robot_description_param,
+            'publish_frequency': 100.0,
+            'frame_prefix': '',
+        }],
+    )
+    joint_state_publisher_gui_node = Node(
+    package='joint_state_publisher_gui',
+    executable='joint_state_publisher_gui'
+    )
+
     robot_description = {"robot_description": robot_description_content}
    
     joint_state_publisher_gui_node = Node(
@@ -117,12 +129,7 @@ def generate_launch_description():
         package="joint_state_publisher_gui",
         executable="joint_state_publisher_gui",
     )
-    robot_state_publisher_node = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        output="both",
-        parameters=[robot_description],
-    )
+
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
