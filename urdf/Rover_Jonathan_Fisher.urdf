@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
 <robot name="Rover_Jonathan_Fisher" xmlns:xacro="http://wiki.ros.org/xacro">
+  <link name="base_link"></link>
+  <joint name="base_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 1.57" />
+    <parent link="base_link" />
+    <child link="robot" />
+  </joint>
 
   <link name="Barra_pinza_fixed">
     <inertial>
@@ -198,7 +204,7 @@
     </collision>
   </link>
 
-  <link name="base_link">
+  <link name="robot">
     <inertial>
       <origin xyz="0 0 -0.0021" rpy="0 0 0" />
       <mass value="500.0" />
@@ -335,7 +341,7 @@
 
   <joint name="Barra_principal" type="prismatic">
     <origin xyz="0 -1.3 1.50313" rpy="0 0 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="Barra_principal" />
     <axis xyz="0 0 1.0" />
     <limit lower="-0.82" upper="0.5" effort="0" velocity="0" />
@@ -343,19 +349,19 @@
 
   <joint name="P_abajo" type="floating">
     <origin xyz="-0.13097 0.46899 -0.78586" rpy="0 0 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="P_abajo" />
   </joint>
 
   <joint name="P_atras" type="floating">
     <origin xyz="0.00012 1.51088 0.10075" rpy="1.5708 0 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="P_atras" />
   </joint>
 
   <joint name="P_derecha" type="floating">
     <origin xyz="-0.7846 0.50205 0.06662" rpy="1.5708 0 1.5708" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="P_derecha" />
   </joint>
 
@@ -377,13 +383,13 @@
 
   <joint name="Untitled" type="floating">
     <origin xyz="0.81387 0.60732 -0.01647" rpy="0 1.5708 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="Untitled" />
   </joint>
 
   <joint name="Untitled.001" type="floating">
     <origin xyz="0.04728 -0.52958 0.01956" rpy="1.5708 0 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="Untitled.001" />
   </joint>
 
@@ -411,7 +417,7 @@
 
   <joint name="rueda1" type="continuous">
     <origin xyz="1.5 1.47 -1.17" rpy="0 1.5708 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="rueda1" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
@@ -419,7 +425,7 @@
 
   <joint name="rueda2" type="continuous">
     <origin xyz="1.5 -1.47 -1.17" rpy="0 1.5708 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="rueda2" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
@@ -427,7 +433,7 @@
 
   <joint name="rueda3" type="continuous">
     <origin xyz="-1.5 1.47 -1.17" rpy="0 1.5708 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="rueda3" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
@@ -435,7 +441,7 @@
 
   <joint name="rueda4" type="continuous">
     <origin xyz="-1.5 -1.47 -1.17" rpy="0 1.5708 0" />
-    <parent link="base_link" />
+    <parent link="robot" />
     <child link="rueda4" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
@@ -466,12 +472,14 @@
   <xacro:arg name="robot_ns" default="" />
   <xacro:arg name="prefix" default="" />
 
+ 
+
 
   <xacro:sensor_camera node_name="arm_camera" node_namespace="$(arg robot_ns)"
-    frame_prefix="$(arg prefix)arm_camera_" parent="$(arg prefix)base_link">
+    frame_prefix="$(arg prefix)arm_camera_" parent="$(arg prefix)robot">
     <origin xyz="0.0 0.0 -0.01" rpy="0 3.141592 0" />
   </xacro:sensor_camera>
-  <xacro:sensor_imu ns="$(arg robot_ns)" prefix="$(arg prefix)imu_" parent="$(arg prefix)base_link">
+  <xacro:sensor_imu ns="$(arg robot_ns)" prefix="$(arg prefix)imu_" parent="$(arg prefix)robot">
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
   </xacro:sensor_imu>
 
