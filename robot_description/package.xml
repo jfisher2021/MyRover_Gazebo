@@ -6,11 +6,8 @@
   <description>
     URDF description for Universal Robots
   </description>
-
   <author>Jonathan Fisher</author>
-  a
-
-  <maintainer email="exner@fzi.de">Felix Exner</maintainer>
+  <maintainer email="j.fisher.2021@alumnos.urjc.es.de">Jonathan Fisher</maintainer>
 
   <license file="LICENSE">BSD-3-Clause</license>
   <!-- The UR20 and UR30 meshes constitutes “Graphical Documentation” the use of which is subject to and governed by our “Terms and Conditions for use of Graphical Documentation”, which can be found here: https://www.universal-robots.com/legal/terms-and-conditions/terms_and_conditions_for_use_of_graphical_documentation.txt -->

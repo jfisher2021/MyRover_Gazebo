@@ -17,7 +17,7 @@ def generate_launch_description():
     position_z = LaunchConfiguration("position_z")
     orientation_yaw = LaunchConfiguration("orientation_yaw")
     odometry_source = LaunchConfiguration("odometry_source", default="world")
-    robot_name = LaunchConfiguration("Rover_Jonathan_Fisher", default="Rover_Jonathan_Fisher")
+    robot_name = LaunchConfiguration("roverB", default="roverB")
     gui_rviz = LaunchConfiguration("gui_rviz", default='true')
 
     spawn_entity = Node(
