@@ -117,3 +117,14 @@ ros2 bag record -o rosbag_plot_sand /imu__imu_plugin/out /rover_base_control/odo
 Esto almacenaba los datos deseados como la odometría, la velocidad de las articulaciones y los datos del sensor IMU.
 
 ## Resultados 📊
+
+Video floor
+
+[floor_rover.webm](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/f11166cc-df0b-4b2a-8a60-18f306024a32)
+
+video sand
+
+[sand_rover.webm](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/362d9f3a-d2d0-4682-874d-4696bad70ce8)
+
+
+
