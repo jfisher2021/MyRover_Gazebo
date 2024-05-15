@@ -126,5 +126,30 @@ video sand
 
 [sand_rover.webm](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/362d9f3a-d2d0-4682-874d-4696bad70ce8)
 
+## Comparativa de las velocidades
 
+
+### Análisis de el mundo de la arena 🏜️
+
+Se puede apreciar que el robot se mueve con un poco mas de dificultad en el mundo de la arena. Esto se debe que el robot tiene que moverse por una superficie con más fricción y con más irregularidades, lo que hace que las ruedas tengan que hacer un mayor esfuerzo para avanzar. 
+
+foto de sand whells
+
+### Análisis de el mundo del suelo 🏞️
+
+En el mundo del suelo, el robot se mueve con más facilidad. Esto se debe a que el robot se mueve por una superficie más lisa y con menos irregularidades, lo que hace que las ruedas tengan que hacer menos esfuerzo para avanzar. 
+
+foto de floor whells
+
+### Conclusiones de la comparativa de velocidades
+
+En conclusión, el robot se mueve con más facilidad en el mundo del suelo que en el mundo de la arena. Aunque no se aprecia mucho en la gráfica, se puede ver como tiene ligeramente menos oscilaciones en el suelo. En ambos mundos se puede apreciar bien cuando el robot choca con la caja, ya que la velocidad de las ruedas disminuye considerablemente.
+
+## Comparativa de la odometría y la velocidad
+aadir fotos de la odometria
+
+
+Segun los resultados obtenidos, se puede apreciar que la odometría de la posición del robot es muy similar en ambos mundos.
+
+## Comparativa de las aceleraciones (Comparativa choque con caja)
 
