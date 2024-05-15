@@ -160,10 +160,22 @@ Segun los resultados obtenidos, se puede apreciar que la odometría de la posici
 Con las graficas de las aceleraciones se puede apreciar como el robot choca con la caja y como la aceleración aumenta considerablemente.
 
 En el mundo del suelo, la aceleración aumenta de forma más brusca que en el mundo de la arena. Esto se debe a que en el mundo del suelo el robot se mueve con más facilidad, por lo que cuando choca con la caja, la aceleración aumenta de forma más brusca. Podemos apreciar dos grandes picos, uno cuando choca con las rueas delanteras y otro cuando choca con las ruedas traseras.
- 
+
 ![aceleracion_floor](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/84fa5df8-5226-438a-9c5a-903027ad7099)
 
 Al igual que en el mundo del suelo, en el mundo de la arena la aceleración aumenta de forma brusca cuando el robot choca con la caja. Auqnue en este caso, la aceleración aumenta de forma más suave que en el mundo del suelo. Podemos apreciar dos picos, uno cuando choca con las ruedas delanteras y otro cuando choca con las ruedas traseras.
 
 ![aceleracion_sand](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/dd783ca7-5eab-4886-98f0-666e862d9b04)
+
+### Conclusiones de la comparativa de las aceleraciones
+
+En conclusión, el robot se mueve con más facilidad en el mundo del suelo que en el mundo de la arena. Aunque no se aprecia del todo en algunas gráficas, se puede ver como el robot tiene menos oscilaciones en el suelo. En ambos mundos se puede apreciar bien cuando el robot choca con la caja, ya que la velocidad de las ruedas disminuye considerablemente. Además, se puede apreciar como la aceleración aumenta de forma brusca cuando el robot choca con la caja en ambos mundos.
+
+## Conclusiones finales 📝
+
+Con esta practica hemos aprendido a visualizar el robot en rviz y simularlo en gazebo. Con la ayuda de los mundos proporcionados por el profesor, y de algunos launchers, hemos podido estudiar el comportamiento del robot en dos entornos distintos. 
+
+## Datos adjuntos 📚
+
+Los datos adjuntos se pueden encontrar en la carpeta [data](data). En esta carpeta se encuentran los datos de la simulación en formato rosbag.
 
