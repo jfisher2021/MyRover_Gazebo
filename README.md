@@ -1,6 +1,26 @@
-# My_Rover 🚀:)
+# My_Rover 🚀
 
-En esta práctica se ha realizado la simulación de un robot en dos entornos de Gazebo diferentes, con el objetivo de estudiar el comportamiento del robot y su modelo de colisión en mundos distintos. Para ello se ha utilizado el robot realizado en la práctica 2, un robot tipo rover modificado para que pueda recojer rocas de Marte 🚀🪐 (cajas 📦).
+En esta práctica se ha realizado la simulación de un robot en dos entornos de Gazebo diferentes, con el objetivo de estudiar el comportamiento del robot y su modelo de colisión en mundos distintos. Para ello se ha utilizado el robot realizado en la práctica 2, un robot tipo rover modificado para que pueda recoger rocas de Marte 🚀🪐 (cajas 📦).
+
+## Índice 📋
+1. [PARTE A](#parte-a)
+    - [Creación del robot 🤖](#creación-del-robot-🤖)
+2. [PARTE B](#parte-b)
+    - [Modificación del robot 🤖](#modificación-del-robot-🤖)
+    - [Creación de los mundos en Gazebo🌍](#creación-de-los-mundos-en-gazebo-🌍)
+    - [Launchers](#launchers)
+    - [Almacenamiento de datos](#almacenamiento-de-datos)
+    - [Resultados📊](#resultados-📊)
+    - [Comparativa de las velocidades](#comparativa-de-las-velocidades)
+        - [Análisis del mundo de la arena🏜️](#análisis-del-mundo-de-la-arena-🏜️)
+        - [Análisis del mundo del suelo🏞️](#análisis-del-mundo-del-suelo-🏞️)
+        - [Conclusiones de la comparativa de velocidades](#conclusiones-de-la-comparativa-de-velocidades)
+    - [Comparativa de la odometría y la velocidad](#comparativa-de-la-odometría-y-la-velocidad)
+    - [Comparativa de las aceleraciones](#comparativa-de-las-aceleraciones)
+        - [Conclusiones de la comparativa de las aceleraciones](#conclusiones-de-la-comparativa-de-las-aceleraciones)
+3. [Conclusiones finales📝](#conclusiones-finales-📝)
+4. [Datos adjuntos📚](#datos-adjuntos-📚)
+
 
 ## PARTE A
 
@@ -129,14 +149,14 @@ video sand
 ## Comparativa de las velocidades
 
 
-### Análisis de el mundo de la arena 🏜️
+### Análisis del mundo de la arena 🏜️
 
 Se puede apreciar que el robot se mueve con un poco mas de dificultad en el mundo de la arena. Esto se debe que el robot tiene que moverse por una superficie con más fricción y con más irregularidades, lo que hace que las ruedas tengan que hacer un mayor esfuerzo para avanzar. 
 
 ![vel_wheels_sand](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/63ccb960-391b-4249-8732-fec89b5c690b)
 
 
-### Análisis de el mundo del suelo 🏞️
+### Análisis del mundo del suelo 🏞️
 
 En el mundo del suelo, el robot se mueve con más facilidad. Esto se debe a que el robot se mueve por una superficie más lisa y con menos irregularidades, lo que hace que las ruedas tengan que hacer menos esfuerzo para avanzar. 
 
@@ -155,7 +175,8 @@ En conclusión, el robot se mueve con más facilidad en el mundo del suelo que e
 
 Segun los resultados obtenidos, se puede apreciar que la odometría de la posición del robot es muy similar en ambos mundos.
 
-## Comparativa de las aceleraciones (Comparativa choque con caja)
+## Comparativa de las aceleraciones 
+### (Comparativa choque con caja)
 
 Con las graficas de las aceleraciones se puede apreciar como el robot choca con la caja y como la aceleración aumenta considerablemente.
 
