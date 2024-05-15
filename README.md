@@ -133,23 +133,33 @@ video sand
 
 Se puede apreciar que el robot se mueve con un poco mas de dificultad en el mundo de la arena. Esto se debe que el robot tiene que moverse por una superficie con más fricción y con más irregularidades, lo que hace que las ruedas tengan que hacer un mayor esfuerzo para avanzar. 
 
-foto de sand whells
+![vel_wheels_sand](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/63ccb960-391b-4249-8732-fec89b5c690b)
+
 
 ### Análisis de el mundo del suelo 🏞️
 
 En el mundo del suelo, el robot se mueve con más facilidad. Esto se debe a que el robot se mueve por una superficie más lisa y con menos irregularidades, lo que hace que las ruedas tengan que hacer menos esfuerzo para avanzar. 
 
-foto de floor whells
+![vel_wheels_floor](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/d2674c61-c4bd-49d8-9b1e-a5be51d9542c)
+
 
 ### Conclusiones de la comparativa de velocidades
 
 En conclusión, el robot se mueve con más facilidad en el mundo del suelo que en el mundo de la arena. Aunque no se aprecia mucho en la gráfica, se puede ver como tiene ligeramente menos oscilaciones en el suelo. En ambos mundos se puede apreciar bien cuando el robot choca con la caja, ya que la velocidad de las ruedas disminuye considerablemente.
 
 ## Comparativa de la odometría y la velocidad
-aadir fotos de la odometria
+![velpos_sand](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/bba741e3-9a38-4f2b-9153-725826105b8f)
+
+![velpos_floor](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/580f0328-1258-4398-9c03-200081464e48)
 
 
 Segun los resultados obtenidos, se puede apreciar que la odometría de la posición del robot es muy similar en ambos mundos.
 
 ## Comparativa de las aceleraciones (Comparativa choque con caja)
+
+floor
+![aceleracion_floor](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/84fa5df8-5226-438a-9c5a-903027ad7099)
+
+sand
+![aceleracion_sand](https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/dd783ca7-5eab-4886-98f0-666e862d9b04)
 
