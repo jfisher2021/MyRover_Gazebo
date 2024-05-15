@@ -59,7 +59,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_file",
-            default_value="roverB.urdf",
+            default_value="roverA.urdf",
             description="URDF/XACRO description file with the robot.",
         )
     )

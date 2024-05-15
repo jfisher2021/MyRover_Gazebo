@@ -12,7 +12,7 @@ def generate_launch_description():
     declared_arguments.append(
        DeclareLaunchArgument(
             "config_controllers", 
-            default_value=join(get_package_share_directory("msr_robot"),'config','rover_controller.yaml'), 
+            default_value=join(get_package_share_directory("robot_description"),'config','rover_controller.yaml'), 
             description="Controller config file",
         )
     )

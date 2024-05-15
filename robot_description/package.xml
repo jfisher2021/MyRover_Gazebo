@@ -34,7 +34,14 @@
   <test_depend>liburdfdom-tools</test_depend>
   <test_depend>xacro</test_depend>
 
+  <!-- <export>
+    <build_type>ament_cmake</build_type>
+  </export> -->
+
   <export>
     <build_type>ament_cmake</build_type>
+    <gazebo_ros gazebo_media_path="${prefix}"
+    gazebo_model_path="${prefix}/models"/>
   </export>
+  
 </package>

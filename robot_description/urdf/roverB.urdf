@@ -103,13 +103,13 @@
     </visual>
   </link>
 
-  <link name="rueda1">
+  <link name="back_left_wheel_joint_">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="10.0" />
       <inertia ixx="0.18726" ixy="0" ixz="0" iyy="0.09682" iyz="0" izz="3.78202" />
     </inertial>
-    <visual name="rueda3.001">
+    <visual name="back_right_wheel_joint.001">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.007.dae"
@@ -117,7 +117,7 @@
       </geometry>
       <material name="rueda" />
     </visual>
-    <collision name="rueda3.001.000">
+    <collision name="back_right_wheel_joint.001.000">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.001.dae"
@@ -126,13 +126,13 @@
     </collision>
   </link>
 
-  <link name="rueda2">
+  <link name="front_left_wheel_joint_">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="10.0" />
       <inertia ixx="1.17034" ixy="0" ixz="0" iyy="0.70986" iyz="0" izz="0.70986" />
     </inertial>
-    <visual name="rueda4.001">
+    <visual name="front_right_wheel_joint.001">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.008.dae"
@@ -140,7 +140,7 @@
       </geometry>
       <material name="rueda" />
     </visual>
-    <collision name="rueda4.001.000">
+    <collision name="front_right_wheel_joint.001.000">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.000.dae"
@@ -149,13 +149,13 @@
     </collision>
   </link>
 
-  <link name="rueda3">
+  <link name="back_right_wheel_joint_">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="10.0" />
       <inertia ixx="1.17034" ixy="0" ixz="0" iyy="0.70986" iyz="0" izz="0.70986" />
     </inertial>
-    <visual name="rueda2.001">
+    <visual name="front_left_wheel_joint.001">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.003.dae"
@@ -163,7 +163,7 @@
       </geometry>
       <material name="rueda" />
     </visual>
-    <collision name="rueda2.001.000">
+    <collision name="front_left_wheel_joint.001.000">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.004.dae"
@@ -172,13 +172,13 @@
     </collision>
   </link>
 
-  <link name="rueda4">
+  <link name="front_right_wheel_joint_">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="10.0" />
       <inertia ixx="1.17034" ixy="0" ixz="0" iyy="0.70986" iyz="0" izz="0.70986" />
     </inertial>
-    <visual name="rueda1.001">
+    <visual name="back_left_wheel_joint.001">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="file://$(find robot_description)/meshes/dae/Torus.006.dae"
@@ -186,7 +186,7 @@
       </geometry>
       <material name="rueda" />
     </visual>
-    <collision name="rueda1.001.000">
+    <collision name="back_left_wheel_joint.001.000">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="/$(find robot_description)/meshes/dae/Torus.002.dae" scale="1.0 1.0 1.0" />
@@ -225,34 +225,34 @@
     <child link="Untitled.001" />
   </joint>
 
-  <joint name="rueda1_" type="continuous">
+  <joint name="back_left_wheel_joint" type="continuous">
     <origin xyz="1.5 1.47 -1.17" rpy="0 1.5708 0" />
     <parent link="robot" />
-    <child link="rueda1" />
+    <child link="back_left_wheel_joint_" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
   </joint>
 
-  <joint name="rueda2_" type="continuous">
+  <joint name="front_left_wheel_joint" type="continuous">
     <origin xyz="1.5 -1.47 -1.17" rpy="0 1.5708 0" />
     <parent link="robot" />
-    <child link="rueda2" />
+    <child link="front_left_wheel_joint_" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
   </joint>
 
-  <joint name="rueda3_" type="continuous">
-    <origin xyz="-1.5 1.47 -1.17" rpy="0 1.5708 0" />
+  <joint name="back_right_wheel_joint" type="continuous">
+    <origin xyz="-1.5 1.47 -1.17" rpy="0 1.5708 3.1416" />
     <parent link="robot" />
-    <child link="rueda3" />
+    <child link="back_right_wheel_joint_" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
   </joint>
 
-  <joint name="rueda4_" type="continuous">
-    <origin xyz="-1.5 -1.47 -1.17" rpy="0 1.5708 0" />
+  <joint name="front_right_wheel_joint" type="continuous">
+    <origin xyz="-1.5 -1.47 -1.17" rpy="0 1.5708 3.1416" />
     <parent link="robot" />
-    <child link="rueda4" />
+    <child link="front_right_wheel_joint_" />
     <axis xyz="0 0 1.0" />
     <limit effort="0" velocity="0" />
   </joint>
@@ -289,5 +289,12 @@
   <xacro:sensor_imu ns="$(arg robot_ns)" prefix="$(arg prefix)imu_" parent="$(arg prefix)robot">
     <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
   </xacro:sensor_imu>
+
+  <!-- Gazebo ros control plugins-->
+  <xacro:arg name="config_controllers"
+    default="$(find robot_description)/config/rover_controller.yaml" />
+  <xacro:arg name="update_rate" default="100" />
+  <xacro:include filename="$(find robot_description)/urdf/ros2_control.urdf.xacro" />
+  <xacro:ros2_control />
 
 </robot>
