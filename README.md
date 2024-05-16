@@ -12,14 +12,14 @@ En esta práctica se ha realizado la simulación de un robot en dos entornos de 
     - [Almacenamiento de datos](#almacenamiento-de-datos)
     - [Resultados📊](#resultados-📊)
     - [Comparativa de las velocidades](#comparativa-de-las-velocidades)
-        - [Análisis del mundo de la arena🏜️](#análisis-del-mundo-de-la-arena-🏜️)
+        - [Análisis del mundo de la arena 🏜️](#análisis-del-mundo-de-la-arena-🏜️)
         - [Análisis del mundo del suelo🏞️](#análisis-del-mundo-del-suelo-🏞️)
         - [Conclusiones de la comparativa de velocidades](#conclusiones-de-la-comparativa-de-velocidades)
     - [Comparativa de la odometría y la velocidad](#comparativa-de-la-odometría-y-la-velocidad)
     - [Comparativa de las aceleraciones](#comparativa-de-las-aceleraciones)
         - [Conclusiones de la comparativa de las aceleraciones](#conclusiones-de-la-comparativa-de-las-aceleraciones)
 3. [Conclusiones finales📝](#conclusiones-finales-📝)
-4. [Datos adjuntos📚](#datos-adjuntos-📚)
+4. [ROSBAGS📚](#ROSBAGS-📚)
 
 
 ## PARTE A
@@ -206,7 +206,7 @@ En conclusión, el robot se mueve con más facilidad en el mundo del suelo que e
 
 Con esta practica hemos aprendido a visualizar el robot en rviz y simularlo en gazebo. Con la ayuda de los mundos proporcionados por el profesor, y de algunos launchers, hemos podido estudiar el comportamiento del robot en dos entornos distintos. 
 
-## Datos adjuntos 📚
+## ROSBAGS 📚
 
 Los datos adjuntos se pueden encontrar en la carpeta [data](data). En esta carpeta se encuentran los datos de la simulación en formato rosbag.
 
