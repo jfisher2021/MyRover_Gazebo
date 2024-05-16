@@ -79,15 +79,12 @@ Además, he añadido un sensor IMU en el centro del robot y una cámara frontal 
 ### video
 
 [PONER VIDEO](URL_DEL_VIDEO)
-
-### PDF adjunto
-
-[tf2_frames.pdf](https://github.com/jfisher2021/MyRover_Gazebo/files/15339751/tf2_frames.pdf)
-
-
-![tf2_frames.pdf](data/tf2_frames.pdf)
-
 PONER VIDEO
+
+### TF2 FRAMES
+
+[tf2_frames.pdf](data/tf2_frames.pdf)
+
 
 ## PARTE B
 
