@@ -80,7 +80,9 @@ Además, he añadido un sensor IMU en el centro del robot y una cámara frontal 
 
 
 
-https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/a749a30f-62f5-418e-82e9-2830e15c61ab
+https://github.com/jfisher2021/MyRover_Gazebo/assets/113594937/52faa350-2a2d-474d-aeaa-0b4813c41305
+
+
 
 
 
