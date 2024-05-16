@@ -1,0 +1,31 @@
+digraph G {
+"barra_sube_baja" -> "Barra_pinza_fixed"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"barra_fixed" -> "barra_sube_baja"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"robot" -> "P_abajo"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "robot"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "P_atras"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "P_derecha"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "Untitled.001"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "Untitled"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Barra_pinza_fixed" -> "arm_camera_camera_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_camera_camera_base_link" -> "arm_camera_camera_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"arm_camera_camera_frame" -> "arm_camera_camera_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"esfera" -> "barra_fixed"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Barra_principal" -> "esfera"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "front_camera_camera_base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"front_camera_camera_base_link" -> "front_camera_camera_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"front_camera_camera_frame" -> "front_camera_camera_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "imu__link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"robot" -> "Barra_principal"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"Barra_pinza_fixed" -> "Pinza_L"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"Barra_pinza_fixed" -> "Pinza_R"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"robot" -> "rueda1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"robot" -> "rueda2"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"robot" -> "rueda3"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+"robot" -> "rueda4"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1715851886.297426\nOldest transform: 1715851881.297437\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1715851886.3104022"[ shape=plaintext ] ;
+}->"base_footprint";
+}

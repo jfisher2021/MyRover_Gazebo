@@ -75,7 +75,14 @@ Además, he añadido un sensor IMU en el centro del robot y una cámara frontal 
   </xacro:sensor_imu>
 ```
 
+
 ### video
+
+[PONER VIDEO](URL_DEL_VIDEO)
+
+### PDF adjunto
+
+![tf2_frames.pdf](data/tf2_frames.pdf)
 
 PONER VIDEO
 
